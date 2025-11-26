@@ -1,0 +1,193 @@
+
+:host {
+    display: block;
+    max-width: 900px; /* Slightly wider component */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px; /* Increased border radius */
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    text-align: center;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-color: #f0f0f0; /* Subtle line */
+    margin: 30px 0;
+}
+
+h1 {
+    color: #000000;
+    border-bottom: 3px solid #e91e63; /* Vibrant Pink */
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3.student-title {
+    color: darkorchid;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+p {
+    margin: 15px 0;
+    line-height: 1.7;
+    font-weight: bold;
+    color: black;
+}
+
+p.inline-text-example {
+    color: #e91e63 !important;
+    font-weight: 700;
+}
+
+.highlight-container {
+    margin-bottom: 25px;
+}
+
+.highlighted {
+    background-color: #fce4ec; /* Light Pink */
+    color: #e91e63; /* Vibrant Pink */
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+    border: 1px solid #e91e63;
+}
+
+
+
+.input-group {
+    margin: 0 auto 30px auto;
+    max-width: 600px; /* Constrain input groups for better visual flow */
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #ffffff;
+}
+
+input:focus {
+    border-color: palevioletred;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgb(72, 16, 71);
+}
+
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    min-width: 130px;
+}
+
+button:hover {
+    background-color: black; /* Dark Orchid on hover */
+    color: #e91e63;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Style for disabled button */
+button[disabled] {
+    background-color: #cccccc; /* Grayed out */
+    cursor: not-allowed;
+    color: #666666;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* Counter Display */
+p.count-value {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: darkorchid;
+    padding: 8px 15px;
+    background-color: #f3e5f5;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Binding Group Layout */
+.binding-demonstration {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.binding-group {
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+/* Class Binding */
+p.student-result {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.passing {
+    color: green;
+    font-weight: bold;
+}
+
+.failing {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style Binding */
+.box {
+    border: 2px solid black;
+    margin: 10px auto 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
