@@ -1,0 +1,18 @@
+<div class = "home-container">
+<div class ="profile-card">
+    <h1>Welcome to the Home Page</h1>
+    <img [src]="imgUrl" alt="Profile Photo" class ="profile-photo"/>
+
+    <h2>{{name}}</h2>
+    <h2>{{email}}</h2>
+    <p>{{description}}</p>
+
+    <div class = "cta-buttons">
+        <a routerLink="/data-binding" class="btn">Data Binding</a>
+        <a routerLink="/directives" class="btn">Directives</a>
+</div>
+</div>
+</div>
+
+<router-outlet></router-outlet>
+    
