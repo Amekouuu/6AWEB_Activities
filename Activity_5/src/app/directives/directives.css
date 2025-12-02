@@ -1,0 +1,169 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9; /* Changed to a very light, soft grey for better contrast with white cards */
+    margin: 0;
+    padding: 30px;
+    color: #343a40; /* Darker text for better readability */
+}
+
+h2 {
+    color: black; /* Changed h2 color to darkorchid for better card theme unity */
+    margin-bottom: 20px; /* Slightly reduced margin */
+    font-weight: 700; /* Bolder title */
+    border-bottom: 2px solid #eee; /* Added subtle separator */
+    padding-bottom: 5px;
+}
+
+h3, p {
+    color: black; /* Changed H3/P to a neutral dark color for better content focus */
+    font-size: 1.2rem; /* Reduced font size for content hierarchy */
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* --- Card Styles --- */
+.card {
+    background: #fff;
+    border: 1px solid #ddd; /* Softer border color, the main color is now used as an accent */
+    border-top: 5px solid #e91e63; /* Added a strong color accent border on top */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Slightly enhanced box shadow */
+    max-width: 650px; /* Slightly widened card for content space */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-content {
+    padding-top: 5px;
+}
+
+/* --- Button Styles --- */
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px; /* Added spacing from content above */
+}
+
+button {
+    background-color: #FFD1DC;
+    color: black; 
+    cursor: pointer;
+    padding: 10px 15px; 
+    margin: 0; 
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    flex-grow: 1;
+    min-width: 130px;
+}
+
+button:hover {
+    background-color: #dd3c72;
+    color: black;
+    padding: 10px 15px;
+}
+
+
+/* Secondary Button for "Hide" */
+.btn-secondary {
+    background: plum;
+    color: black;
+    cursor: pointer;
+    padding: 10px 15px; 
+    margin: 0; 
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    flex-grow: 1;
+    min-width: 130px;
+}
+
+.btn-secondary:hover {
+    background-color: darkorchid;
+    color: black; 
+    padding: 10px 15px;
+}
+
+
+/* --- Status & Note Styles --- */
+.note-true {
+    color: green; 
+    font-weight: 700;
+}
+
+.note-false {
+    color: red; 
+    font-weight: 700;
+}
+
+.status-active {
+    color: green;
+    font-weight: 700;
+    padding: 2px 6px;
+    background: #f2e6ff;
+    border-radius: 4px;
+}
+
+.status-inactive {
+    color: #999;
+    font-weight: 500;
+}
+
+.paragraph-visible {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f8e6ff;
+    border-left: 4px solid #e91e63;
+    font-style: italic;
+}
+
+
+ul {
+    padding-left: 20px;
+    list-style: square;
+}
+
+li {
+    padding: 6px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #e91e63;
+    color: white; 
+    padding: 12px 10px;
+    text-align: left;
+    font-weight: 700;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7; 
+}
+
+tr:hover {
+    background-color: #f0f0f0; 
+}

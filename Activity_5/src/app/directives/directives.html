@@ -1,0 +1,94 @@
+<div class="container">
+
+  <div class="card">
+    <h2>Toggle Static Note Value</h2>
+    <div class="card-content">
+      <div class="note-display">
+        @if(isNoteVisible) {
+          <h3 class="note-true">This is a static note with a value of: True!</h3>
+        }
+        @else{
+          <h3 class="note-false">This is a static note with a value of: False!</h3>
+        }
+      </div>
+      <div class="card-actions">
+        <button (click)="showNote()" class="btn-primary">Show Note</button>
+        <button (click)="hideNote()" class="btn-secondary">Hide Note</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Toggle Paragraph Visibility</h2>
+    <div class="card-content">
+      <div class="card-actions">
+        <button (click)="toggleNote()" class="btn-primary">{{isParagraphVisible ? 'Hide Paragraph' : 'Show Paragraph'}}</button>
+      </div>
+      @if (isParagraphVisible) {
+        <p class="paragraph-visible">This is a toggleable paragraph.</p>
+      }
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Static Month Name Check</h2>
+    <div class="card-content">
+      @if(monthNameStatic === "Jan") {
+        <h3>The month is January.</h3>
+      }
+      @else if(monthNameStatic === "Feb") {
+        <h3>The month is February.</h3>
+      }
+      @else if(monthNameStatic === "Mar") {
+        <h3>The month is March.</h3>
+      }
+      @else {
+        <h3 class="note-false">Month not recognized.</h3>
+      }
+    </div>
+  </div>
+
+
+ <div class="card">
+    <h2>City List</h2>
+    <div class="card-content">
+      <ul class="styled-list">
+        @for (i of cityList; track $index){
+          <li>{{i}}</li>
+        }
+      </ul>
+    </div>
+  </div> 
+
+  <div class="card">
+    <h2>Driver List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Number
+
+          </th>
+          <th>Name</th>
+          <th>Team</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (i of studentList; track $index) {
+          <tr>
+            <td>{{$index + 1}}</td>
+            <td>{{i.drivername}}</td>
+            <td>{{i.team}}</td>
+            <td>
+              @if (i.isActive) {
+                <span class="status-active">Active</span>
+              } @else {
+                <span class="status-inactive">Inactive</span>
+              }
+            </td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

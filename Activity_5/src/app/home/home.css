@@ -1,0 +1,132 @@
+/* --- Global & Container Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #eef2f5; /* Very light blue-gray background */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333; 
+    border-bottom: 2px solid #e91e63; /* Vibrant Pink accent border (Thinner for elegance) */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+h2 {
+    color: #212529; 
+    margin-bottom: 5px; 
+    font-weight: 700; 
+    font-size: 1.6rem; 
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #555; 
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+/* --- Profile Card Styles --- */
+.profile-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-top: 5px solid #e91e63;
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced, prominent shadow */
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px); /* Stronger lift effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-weight: 600;
+}
+
+/* --- Profile Photo & Info --- */
+.profile-body {
+    padding: 10px 0 25px 0;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid black; /* Strong border for prominence */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info h2 {
+    margin: 5px 0 0 0;
+}
+
+.email-text {
+   
+    font-size: 1rem;
+    color: #e91e63; 
+    margin: 0 0 15px 0;
+    font-weight: 500;
+}
+
+.description-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-top: 1px dashed #eee; 
+}
+
+/* --- Call to Action (CTA) Buttons --- */
+.cta-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.btn {
+    cursor: pointer;
+    color: black;
+    background-color: #FFD1DC;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #dd3c72; /* Darker Teal */
+    box-shadow: 0 4px 10px rgba(0);
+    padding: 10px 15px;
+}
